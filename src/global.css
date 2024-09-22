@@ -5,7 +5,7 @@
 
 body {
   margin: auto;
-  min-width: 1200px;
+  max-width: 1200px;
   min-height: 100vh;
   padding: 10px;
   background-color: #f9fafc;
@@ -20,4 +20,10 @@ body {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  ;
 }
