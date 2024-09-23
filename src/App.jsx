@@ -7,18 +7,21 @@ import CheckOutPage from "./Pages/CheckOutPage";
 import NotFoundPage from "./Pages/404";
 import ProductsProvider from "./context/ProductsContext";
 import CartProvider from "./context/CartContext";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
     <CartProvider>
       <ProductsProvider>
-        <Routes>
-          <Route index element={<Navigate to="/products" replace />} />
-          <Route path="products" element={<ProductsPage />} />
-          <Route path="products/:id" element={<DetailPage />} />
-          <Route path="checkout" element={<CheckOutPage />} />
-          <Route path="/*" element={<NotFoundPage />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route index element={<Navigate to="/products" replace />} />
+            <Route path="products" element={<ProductsPage />} />
+            <Route path="products/:id" element={<DetailPage />} />
+            <Route path="checkout" element={<CheckOutPage />} />
+            <Route path="/*" element={<NotFoundPage />} />
+          </Routes>
+        </Layout>
       </ProductsProvider>
     </CartProvider>
   );

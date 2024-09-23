@@ -51,9 +51,16 @@
 }
 
 .actions div span {
-    width: 20px;
+    width: 32px;
+    height: 32px;
     text-align: center;
-    margin: 0 10px;
+    margin: 2px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 28px;
+    border-radius: 8px;
+    border: 2px solid #fd5e42;
+    margin: 0 5px;
 }
 
 .actions div button {
